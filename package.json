@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "nanoid": "^4.0.0",
   "scripts": {
     "test": "jest",
     "start": "webpack-dev-server --mode development --watch --open --hot",
@@ -23,13 +24,8 @@
     "moduleNameMapper": {
       "\\.(css|less|sass|scss)$": "<rootDir>/config/CSSStub.js"
     },
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "reporters": [
-      "default",
-      "jest-junit"
-    ]
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "reporters": ["default", "jest-junit"]
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
